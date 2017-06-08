@@ -9,7 +9,7 @@
   ],
   "scenarios": [
     {
-      "label": "BackstopJS Homepage",
+      "label": "Standard Condition",
       "url": "http://localhost:5000",
       "hideSelectors": [],
       "removeSelectors": [],
@@ -82,6 +82,6 @@
   },
   "casperFlags": [],
   "engine": "phantomjs",
-  "report": ["browser"],
+  "report": ["browser", "CI"],
   "debug": false
 }

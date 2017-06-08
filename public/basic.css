@@ -11,7 +11,6 @@ body {
   width: 80%;
 }
 
-
 .title {
   height: 1.5em;
   margin: 8px 16px;
@@ -23,3 +22,10 @@ body {
   background-color: silver;
 }
 
+.sidebar {
+  background-color: azure;
+}
+
+.main {
+  background-color: #FFB6C1;
+}

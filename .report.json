@@ -1,0 +1,21 @@
+{
+    "test_count": 4, 
+    "test_cases": [
+        {
+            "name": " \u203a\u203a Standard Condition", 
+            "passed": true
+        }, 
+        {
+            "name": " \u203a\u203a Long Sidebar", 
+            "passed": true
+        }, 
+        {
+            "name": " \u203a\u203a Nest in Other Layout", 
+            "passed": true
+        }, 
+        {
+            "name": " \u203a\u203a Content with Background", 
+            "passed": true
+        }
+    ]
+}

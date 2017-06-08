@@ -1,0 +1,42 @@
+pipeline:
+  restore-cache:
+    image: drillster/drone-volume-cache
+    restore: true
+    mount:
+      - ./node_modules
+    # Mount the cache volume, needs "Trusted"
+    volumes:
+      - /tmp/cache:/cache
+
+  test:
+    image: atoto/backstopjs-trusty
+    commands:
+      - npm install
+      - npm start &
+      - sleep 5
+      - backstop test
+
+  upload_report:
+    image: plugins/s3
+    acl: public-read
+    source: backstop_data/**/*
+    when: 
+      status: [ success, failure ]
+
+  report:
+    image: eisenxu/junit-reportor
+    test_results: backstop_data/ci_report
+    report_entrypoint: backstop_data/html_report/index.html
+    when: 
+      status: [ success, failure ]
+  
+  rebuild-cache:
+    image: drillster/drone-volume-cache
+    rebuild: true
+    mount:
+      - ./node_modules
+    # Mount the cache volume, needs "Trusted"
+    volumes:
+      - /tmp/cache:/cache
+    when:
+      status: [ success, failure ]
