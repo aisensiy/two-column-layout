@@ -1,0 +1,20 @@
+.content {
+  margin: 0 auto;
+  position: relative;
+}
+
+.sidebar {
+  width: 15em;
+  background-color: azure;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.main {
+  margin-left: 15em;
+  background-color: #FFB6C1;
+  overflow: auto;
+}

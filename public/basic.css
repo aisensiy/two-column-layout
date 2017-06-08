@@ -1,0 +1,25 @@
+body {
+  -webkit-font-smoothing: none;
+  font-family: "Open Sans";
+  font-size: 18px;
+  background-color: white;
+  font-weight: 400;
+  color: black;
+}
+
+.content {
+  width: 80%;
+}
+
+
+.title {
+  height: 1.5em;
+  margin: 8px 16px;
+  background-color: silver;
+}
+
+.paragraph {
+  margin: 8px 16px;
+  background-color: silver;
+}
+

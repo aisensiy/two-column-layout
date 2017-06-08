@@ -1,0 +1,18 @@
+{
+  "name": "css-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/serve/bin/serve.js -s public --port 5000",
+    "test": "backstop test"
+  },
+  "author": "aisensiy@163.com",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "backstopjs": "^2.6.14",
+    "casperjs": "^1.1.4",
+    "serve": "^5.1.5"
+  }
+}
